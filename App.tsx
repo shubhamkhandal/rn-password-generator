@@ -152,7 +152,7 @@ const App = () => {
 
                 <View style={styles.formActions}>
                   <TouchableOpacity
-                    onPress={handleSubmit}
+                    onPress={() => handleSubmit()}
                     disabled={!isValid}
                     style={styles.primaryBtn}>
                     <Text style={styles.primaryBtnTxt}>Generate Passowrd</Text>
